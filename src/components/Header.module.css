@@ -1,0 +1,106 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 1.25rem 0;
+  width: 100%;
+}
+
+.logoSlot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: start;
+  padding: 0.25rem 0.35rem;
+  margin-left: -0.35rem;
+  border-radius: var(--radius-nav);
+  box-sizing: border-box;
+  transition: background 0.25s ease, backdrop-filter 0.25s ease;
+}
+
+.logoSlotScrolled {
+  background: rgba(240, 240, 240, 0.92);
+  backdrop-filter: blur(8px);
+}
+
+.logoLink {
+  display: block;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  height: 2rem;
+  width: auto;
+  margin: 0;
+  vertical-align: top;
+  object-fit: contain;
+}
+
+
+.nav {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.25rem;
+  width: 350px;
+  height: 25px;
+  padding: 0;
+  border: 0.5px solid #d9d9d9;
+  border-radius: var(--radius-nav);
+  box-sizing: border-box;
+  transition: background 0.25s ease, backdrop-filter 0.25s ease;
+}
+
+.navScrolled {
+  background: rgba(240, 240, 240, 0.92);
+  backdrop-filter: blur(8px);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+  padding: 0 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text);
+  border-radius: calc(var(--radius-nav) - 1px);
+  transition: color 0.2s, background 0.2s;
+  text-decoration: none;
+}
+
+.linkText {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.link:hover .linkText {
+  transform: scale(0.92);
+}
+
+.link:hover {
+  background: #f0f0f0;
+  color: var(--text);
+}
+
+.linkActive {
+  background: #282828;
+  color: #ffffff;
+}
+
+.linkActive:hover .linkText {
+  transform: scale(0.92);
+}
+
+.linkActive:hover {
+  background: #282828;
+  color: #ffffff;
+}

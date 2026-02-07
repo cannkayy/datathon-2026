@@ -1,0 +1,89 @@
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --text-muted: #6b6b6b;
+  --nav-bg: #f5f5f5;
+  --nav-active-bg: #282828;
+  --nav-active-text: #ffffff;
+  --viz-bg: #161616;
+  --radius: 12px;
+  --radius-nav: 999px;
+  --font: 'Inter', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 15px;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.page-fade {
+  transform-origin: center center;
+}
+
+.stagger-fade > * {
+  opacity: 0;
+  animation: pageFadeIn 0.6s ease-out forwards;
+  transform-origin: center center;
+}
+.stagger-fade > *:nth-child(1) { animation-delay: 0s; }
+.stagger-fade > *:nth-child(2) { animation-delay: 0.1s; }
+.stagger-fade > *:nth-child(3) { animation-delay: 0.2s; }
+.stagger-fade > *:nth-child(4) { animation-delay: 0.3s; }
+.stagger-fade > *:nth-child(5) { animation-delay: 0.4s; }
+.stagger-fade > *:nth-child(6) { animation-delay: 0.5s; }
+.stagger-fade > *:nth-child(7) { animation-delay: 0.6s; }
+.stagger-fade > *:nth-child(8) { animation-delay: 0.7s; }
+.stagger-fade > *:nth-child(9) { animation-delay: 0.8s; }
+.stagger-fade > *:nth-child(10) { animation-delay: 0.9s; }
+.stagger-fade > *:nth-child(11) { animation-delay: 1s; }
+.stagger-fade > *:nth-child(12) { animation-delay: 1.1s; }
+.stagger-fade > *:nth-child(13) { animation-delay: 1.2s; }
+.stagger-fade > *:nth-child(14) { animation-delay: 1.3s; }
+.stagger-fade > *:nth-child(15) { animation-delay: 1.4s; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Tableau-ready visualization containers */
+.viz-placeholder {
+  background: var(--viz-bg);
+  border-radius: 25px;
+  min-height: 200px;
+  overflow: hidden;
+}
+.viz-placeholder > * {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+}
+.viz-placeholder iframe {
+  border: none;
+}
