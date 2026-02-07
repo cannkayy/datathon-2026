@@ -27,6 +27,19 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+@media (max-width: 768px) {
+  body {
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0 10px;
+    overflow-x: hidden;
+  }
+}
+
 #root {
   min-height: 100vh;
 }
@@ -86,4 +99,18 @@ a {
 }
 .viz-placeholder iframe {
   border: none;
+}
+
+@media (max-width: 768px) {
+  .viz-placeholder,
+  .viz-placeholder > * {
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .viz-placeholder,
+  .viz-placeholder > * {
+    min-height: 160px;
+  }
 }

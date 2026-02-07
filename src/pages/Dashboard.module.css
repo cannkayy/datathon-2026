@@ -45,9 +45,14 @@
 }
 
 @media (max-width: 768px) {
+  .page {
+    padding: 1.5rem 0;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    gap: 12px;
   }
 
   .box1,
@@ -58,6 +63,24 @@
   .box6,
   .box7 {
     grid-column: span 1;
-    height: 497px;
+    height: 320px;
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 1rem 0;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6,
+  .box7 {
+    height: 280px;
+    min-height: 240px;
   }
 }
