@@ -5,7 +5,7 @@ const TEAM = [
   { name: 'Ahn Do', role: 'Role' },
   { name: 'Christie Dong', role: 'Role' },
   { name: 'Stephanie Balderas', role: 'Role' },
-  { name: 'Cannon Hurst', role: 'Role' },
+  { name: 'Cannon Hurst', role: 'UX/UI Designer' },
 ]
 
 export default function About() {
