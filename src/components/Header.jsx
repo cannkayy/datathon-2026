@@ -40,7 +40,7 @@ export default function Header() {
             isActive ? `${styles.link} ${styles.linkActive}` : styles.link
           }
         >
-          <span className={styles.linkText}>about</span>
+          <span className={styles.linkText}>About</span>
         </NavLink>
       </nav>
       <div className={styles.logoSlot} aria-hidden="true" />
