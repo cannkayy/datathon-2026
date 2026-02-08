@@ -33,11 +33,10 @@ export default function TableauEmbed() {
       id={VIZ_ID}
       className="tableauPlaceholder"
       style={{
-        position: 'relative',
         width: '100%',
         height: '100%',
         minHeight: '200px',
-        background: 'transparent',
+        background: 'var(--viz-bg)',
         borderRadius: '25px',
         overflow: 'hidden',
       }}
