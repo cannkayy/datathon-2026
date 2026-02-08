@@ -129,6 +129,8 @@ a {
   background: var(--viz-bg);
   border-radius: inherit;
   overflow: hidden;
+  /* Dark overlay at edges to cover Tableau’s white border */
+  box-shadow: inset 0 0 0 3px var(--viz-bg);
 }
 
 @media (max-width: 768px) {
