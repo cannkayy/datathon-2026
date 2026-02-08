@@ -41,7 +41,7 @@ export default function TableauEmbedOverview() {
         minHeight: '200px',
         padding: 0,
         margin: 0,
-        background: 'var(--viz-bg)',
+        background: 'transparent',
         borderRadius: '25px',
         overflow: 'hidden',
       }}

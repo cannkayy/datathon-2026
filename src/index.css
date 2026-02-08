@@ -94,6 +94,10 @@ a {
   overflow: hidden;
   isolation: isolate;
 }
+/* Tableau embed boxes: no black background, viz fills */
+.viz-placeholder:has(.tableauPlaceholder) {
+  background: transparent;
+}
 .viz-placeholder > * {
   width: 100%;
   height: 100%;
@@ -102,6 +106,9 @@ a {
   margin: 0;
   background: var(--viz-bg);
   box-sizing: border-box;
+}
+.viz-placeholder:has(.tableauPlaceholder) > * {
+  background: transparent;
 }
 .viz-placeholder iframe,
 .viz-placeholder object {
@@ -113,7 +120,7 @@ a {
   height: 100% !important;
   min-width: 100%;
   min-height: 100%;
-  background: var(--viz-bg);
+  background: transparent;
   border-radius: inherit;
   overflow: hidden;
   /* Slightly scale to hide white border from Tableau’s internal padding */
