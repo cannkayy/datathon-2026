@@ -32,7 +32,15 @@ export default function TableauEmbed() {
     <div
       id={VIZ_ID}
       className="tableauPlaceholder"
-      style={{ position: 'relative', width: '100%', height: '100%', minHeight: '200px' }}
+      style={{
+        position: 'relative',
+        width: '100%',
+        height: '100%',
+        minHeight: '200px',
+        background: 'var(--viz-bg)',
+        borderRadius: '25px',
+        overflow: 'hidden',
+      }}
     >
       <noscript>
         <a href="#">
