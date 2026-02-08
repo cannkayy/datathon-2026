@@ -1,6 +1,7 @@
 import VizPlaceholder from '../components/VizPlaceholder'
 import MockMapViz from '../components/MockMapViz'
 import MockGaugeViz from '../components/MockGaugeViz'
+import MockSkillMatrixViz from '../components/MockSkillMatrixViz'
 import TableauEmbed from '../components/TableauEmbed'
 import styles from './Report.module.css'
 
@@ -49,12 +50,18 @@ export default function Report() {
             <h2 className={styles.sectionTitle}>{section.title}</h2>
             <p className={styles.sectionBody}>{section.body}</p>
           </div>
-          <div className={styles.vizRow}>
+          <div className={i === 1 ? `${styles.vizRow} ${styles.vizRowDashboard}` : styles.vizRow}>
             {i === 0 ? (
               <>
                 <VizPlaceholder embed={<MockMapViz />} />
                 <VizPlaceholder embed={<MockGaugeViz />} />
                 <VizPlaceholder embed={<TableauEmbed />} />
+              </>
+            ) : i === 1 ? (
+              <>
+                <VizPlaceholder embed={<MockMapViz />} />
+                <VizPlaceholder embed={<MockGaugeViz />} />
+                <VizPlaceholder embed={<MockSkillMatrixViz />} />
               </>
             ) : (
               <>
