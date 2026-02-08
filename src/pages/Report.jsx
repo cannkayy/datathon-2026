@@ -2,6 +2,7 @@ import VizPlaceholder from '../components/VizPlaceholder'
 import TableauEmbed from '../components/TableauEmbed'
 import TableauEmbedOverview from '../components/TableauEmbedOverview'
 import TableauEmbedThirdRow from '../components/TableauEmbedThirdRow'
+import Dashboard1Caption from '../components/Dashboard1Caption'
 import Dashboard2Caption from '../components/Dashboard2Caption'
 import BlackBoxWithLabel from '../components/BlackBoxWithLabel'
 import styles from './Report.module.css'
@@ -50,7 +51,7 @@ export default function Report() {
           <div className={i === 0 ? `${styles.vizRow} ${styles.vizRowFirst}` : i === 1 ? `${styles.vizRow} ${styles.vizRowDashboard}` : i === 2 ? `${styles.vizRow} ${styles.vizRowThird}` : styles.vizRow}>
             {i === 0 ? (
               <>
-                <VizPlaceholder embed={<BlackBoxWithLabel number={1} />} />
+                <VizPlaceholder embed={<BlackBoxWithLabel number={1}><Dashboard1Caption /></BlackBoxWithLabel>} />
                 <VizPlaceholder embed={<TableauEmbed />} />
               </>
             ) : i === 1 ? (
