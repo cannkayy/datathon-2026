@@ -81,12 +81,15 @@
 
 .sectionHeader {
   font-size: 0.75em;
-  color: #999;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   margin-top: 20px;
   margin-bottom: 12px;
   font-weight: 600;
+  background: linear-gradient(90deg, #FFE414 0%, #45FCB3 33%, #EA45FC 66%, #FC7345 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .storyCard .sectionHeader:first-of-type {
@@ -182,7 +185,10 @@
 }
 
 .statLabel {
-  color: #999;
+  background: linear-gradient(90deg, #FFE414 0%, #45FCB3 33%, #EA45FC 66%, #FC7345 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .statValue {
