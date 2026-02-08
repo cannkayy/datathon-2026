@@ -55,7 +55,7 @@ export default function TableauEmbed() {
         <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
         <param name="embed_code_version" value="3" />
         <param name="path" value="shared/F4NXCJ96H" />
-        <param name="toolbar" value="yes" />
+        <param name="toolbar" value="no" />
         <param name="static_image" value="https://public.tableau.com/static/images/F4/F4NXCJ96H/1.png" />
         <param name="animate_transition" value="yes" />
         <param name="display_static_image" value="yes" />
