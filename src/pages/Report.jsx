@@ -4,6 +4,7 @@ import TableauEmbedOverview from '../components/TableauEmbedOverview'
 import TableauEmbedThirdRow from '../components/TableauEmbedThirdRow'
 import Dashboard1Caption from '../components/Dashboard1Caption'
 import Dashboard2Caption from '../components/Dashboard2Caption'
+import Dashboard3Caption from '../components/Dashboard3Caption'
 import BlackBoxWithLabel from '../components/BlackBoxWithLabel'
 import styles from './Report.module.css'
 
@@ -61,7 +62,7 @@ export default function Report() {
               </>
             ) : (
               <>
-                <VizPlaceholder embed={<BlackBoxWithLabel number={3} />} />
+                <VizPlaceholder embed={<BlackBoxWithLabel number={3}><Dashboard3Caption /></BlackBoxWithLabel>} />
                 <VizPlaceholder embed={<TableauEmbedThirdRow />} />
               </>
             )}
