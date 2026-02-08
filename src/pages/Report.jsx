@@ -3,6 +3,7 @@ import MockMapViz from '../components/MockMapViz'
 import MockGaugeViz from '../components/MockGaugeViz'
 import MockSkillMatrixViz from '../components/MockSkillMatrixViz'
 import TableauEmbed from '../components/TableauEmbed'
+import TableauEmbedOverview from '../components/TableauEmbedOverview'
 import styles from './Report.module.css'
 
 const TEAM = [
@@ -60,7 +61,7 @@ export default function Report() {
             ) : i === 1 ? (
               <>
                 <VizPlaceholder embed={<MockMapViz />} />
-                <VizPlaceholder embed={<MockGaugeViz />} />
+                <VizPlaceholder embed={<TableauEmbedOverview />} />
                 <VizPlaceholder embed={<MockSkillMatrixViz />} />
               </>
             ) : (
