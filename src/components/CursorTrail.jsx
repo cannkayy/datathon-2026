@@ -8,7 +8,7 @@ const RAINBOW = [
 ]
 
 const IDLE_MS = 120
-const TRAIL_LENGTH = 90
+const TRAIL_LENGTH = 140
 const HEAD_LERP = 0.28
 const TAIL_LERP = 0.16
 const PULL_TO_CURSOR = 0.048
