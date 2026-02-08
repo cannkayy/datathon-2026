@@ -3,8 +3,9 @@ import styles from './Dashboard.module.css'
 export default function Dashboard() {
   return (
     <div className={styles.page}>
-      <section className={styles.mlSection}>
-        <div className={styles.bento}>
+      <div className="stagger-fade">
+        <section className={styles.mlSection}>
+          <div className={styles.bento}>
           {/* Story Card - spans rows 1-2, column 1 */}
           <article className={styles.storyCard}>
             <h3>Predicting Air Quality: From Correlation to Machine Learning</h3>
@@ -80,8 +81,9 @@ export default function Dashboard() {
             <div className={styles.separator} aria-hidden />
             <p><strong>Result:</strong> Data-driven predictions accurate within ±0.3 days, enabling proactive public health responses. The correlation analysis was essential—it guided feature selection, revealed non-linearity, and validated our Random Forest's feature importance rankings.</p>
           </article>
-        </div>
-      </section>
+          </div>
+        </section>
+      </div>
     </div>
   )
 }
