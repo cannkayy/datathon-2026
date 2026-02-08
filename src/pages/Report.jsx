@@ -1,7 +1,6 @@
 import VizPlaceholder from '../components/VizPlaceholder'
 import MockMapViz from '../components/MockMapViz'
 import MockGaugeViz from '../components/MockGaugeViz'
-import MockSkillMatrixViz from '../components/MockSkillMatrixViz'
 import TableauEmbed from '../components/TableauEmbed'
 import TableauEmbedOverview from '../components/TableauEmbedOverview'
 import styles from './Report.module.css'
@@ -62,7 +61,6 @@ export default function Report() {
               <>
                 <VizPlaceholder embed={<MockMapViz />} />
                 <VizPlaceholder embed={<TableauEmbedOverview />} />
-                <VizPlaceholder embed={<MockSkillMatrixViz />} />
               </>
             ) : (
               <>

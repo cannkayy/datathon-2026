@@ -91,9 +91,9 @@
   gap: 15px;
 }
 
-/* Second row: same layout as Dashboard first row (25% | 37.5% | 37.5%) */
+/* Second row: Map (1 col) + Tableau Overview (2 cols) */
 .vizRowDashboard {
-  grid-template-columns: 2fr 3fr 3fr;
+  grid-template-columns: 2fr 6fr;
 }
 
 .vizRow .viz-placeholder {
