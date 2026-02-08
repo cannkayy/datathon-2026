@@ -46,11 +46,10 @@ export default function Report() {
         </header>
         {SECTIONS.map((section, i) => (
         <section key={i} className={styles.section}>
-          <div className={i === 1 ? `${styles.vizRow} ${styles.vizRowDashboard}` : styles.vizRow}>
+          <div className={i === 0 ? `${styles.vizRow} ${styles.vizRowFirst}` : i === 1 ? `${styles.vizRow} ${styles.vizRowDashboard}` : styles.vizRow}>
             {i === 0 ? (
               <>
                 <VizPlaceholder embed={<MockMapViz />} />
-                <VizPlaceholder embed={<MockGaugeViz />} />
                 <VizPlaceholder embed={<TableauEmbed />} />
               </>
             ) : i === 1 ? (
