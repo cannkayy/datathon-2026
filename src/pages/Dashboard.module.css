@@ -3,84 +3,216 @@
   padding: 2rem 0;
 }
 
-.grid {
+.mlSection {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.bento {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 497px 497px 497px;
+  grid-template-columns: 1.5fr 1fr;
+  grid-auto-rows: auto;
   gap: 15px;
 }
 
-/* Row 1: 25% | 37.5% | 37.5% */
-.box1 {
-  grid-column: span 2;
-  height: 497px;
-}
-.box2 {
-  grid-column: span 3;
-  height: 497px;
-}
-.box3 {
-  grid-column: span 3;
-  height: 497px;
+/* Story Card - column 1, rows 1-2 */
+.storyCard {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  background: #151517;
+  border-radius: 20px;
+  padding: 30px;
 }
 
-/* Row 2: 75% | 25% */
-.box4 {
-  grid-column: span 6;
-  height: 497px;
-}
-.box5 {
-  grid-column: span 2;
-  height: 497px;
-}
-
-/* Row 3: 25% | 75% */
-.box6 {
-  grid-column: span 2;
-  height: 497px;
-}
-.box7 {
-  grid-column: span 6;
-  height: 497px;
+/* Correlation Matrix - column 2, row 1 */
+.correlationCard {
+  grid-column: 2;
+  grid-row: 1;
+  background: #151517;
+  border-radius: 20px;
+  padding: 20px;
 }
 
-@media (max-width: 768px) {
-  .page {
-    padding: 1.5rem 0;
-  }
+/* Model Performance - column 2, row 2 */
+.performanceCard {
+  grid-column: 2;
+  grid-row: 2;
+  background: #151517;
+  border-radius: 20px;
+  padding: 30px;
+}
 
-  .grid {
+/* Model Comparison Plots - full width, row 3 */
+.plotsCard {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  background: #151517;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* Impact - full width, row 4 */
+.impactCard {
+  grid-column: 1 / -1;
+  grid-row: 4;
+  background: #151517;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+/* Shared card typography */
+.storyCard h3,
+.correlationCard h3,
+.performanceCard h3,
+.plotsCard h3,
+.impactCard h3 {
+  font-size: 1.1em;
+  margin: 0 0 16px 0;
+  color: #fff;
+}
+
+.sectionHeader {
+  font-size: 0.75em;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.storyCard .sectionHeader:first-of-type {
+  margin-top: 0;
+}
+
+.storyCard p,
+.storyCard ul,
+.impactCard p,
+.impactCard ul {
+  line-height: 1.65;
+  color: #ccc;
+  font-size: 0.95em;
+  margin-bottom: 14px;
+}
+
+.storyCard ul,
+.impactCard ul {
+  padding-left: 1.25rem;
+}
+
+.storyCard li,
+.impactCard li {
+  margin-bottom: 8px;
+}
+
+.storyCard p:last-child,
+.impactCard p:last-child {
+  margin-bottom: 0;
+}
+
+.separator {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, #666, transparent);
+  margin: 20px 0;
+}
+
+.highlight {
+  color: #ddd;
+}
+
+.cardImage {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Model Performance card - model boxes */
+.modelComparison {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.modelBox {
+  background: #0a0a0a;
+  border-radius: 8px;
+  padding: 20px;
+  border-left: 3px solid #555;
+  margin-bottom: 16px;
+}
+
+.modelBox:last-child {
+  margin-bottom: 0;
+}
+
+.modelBox h4 {
+  margin: 0 0 16px 0;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #222;
+}
+
+.statRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 8px 0;
+}
+
+.statRow:last-of-type {
+  margin-bottom: 0;
+}
+
+.statLabel {
+  color: #999;
+}
+
+.statValue {
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+.modelNote {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #222;
+  font-size: 0.85em;
+  color: #888;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .bento {
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 12px;
   }
 
-  .box1,
-  .box2,
-  .box3,
-  .box4,
-  .box5,
-  .box6,
-  .box7 {
-    grid-column: span 1;
-    height: 320px;
-    min-height: 280px;
-  }
-}
-
-@media (max-width: 480px) {
-  .page {
-    padding: 1rem 0;
+  .storyCard {
+    grid-column: 1;
+    grid-row: auto;
   }
 
-  .box1,
-  .box2,
-  .box3,
-  .box4,
-  .box5,
-  .box6,
-  .box7 {
-    height: 280px;
-    min-height: 240px;
+  .correlationCard {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .performanceCard {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .plotsCard {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .impactCard {
+    grid-column: 1;
+    grid-row: auto;
   }
 }
