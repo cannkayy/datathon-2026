@@ -6,6 +6,7 @@ export default function Dashboard2Caption() {
       <p>
         This dashboard compares the average percentage of Unhealthy AQI days across U.S. states and counties from 2020 to 2025.
       </p>
+      <div className={styles.separator} aria-hidden />
       <p>
         The left chart aggregates data at the state level, showing which states experience a higher share of unhealthy air quality days on average.
       </p>
