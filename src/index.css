@@ -87,6 +87,7 @@ a {
 
 /* Tableau-ready visualization containers */
 .viz-placeholder {
+  position: relative;
   background: var(--viz-bg);
   border-radius: 25px;
   min-height: 200px;
@@ -96,10 +97,19 @@ a {
   width: 100%;
   height: 100%;
   min-height: 200px;
+  padding: 0;
+  margin: 0;
   background: var(--viz-bg);
+  box-sizing: border-box;
 }
-.viz-placeholder iframe {
+.viz-placeholder iframe,
+.viz-placeholder object {
+  display: block;
   border: none;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 @media (max-width: 768px) {

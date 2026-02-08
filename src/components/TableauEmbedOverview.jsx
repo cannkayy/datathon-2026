@@ -12,7 +12,8 @@ export default function TableauEmbedOverview() {
 
     const setSize = () => {
       vizElement.style.width = '100%'
-      vizElement.style.height = div.offsetHeight ? `${div.offsetHeight}px` : `${div.offsetWidth * 0.75}px`
+      vizElement.style.height = '100%'
+      vizElement.style.minHeight = '100%'
     }
     setSize()
 
@@ -33,10 +34,13 @@ export default function TableauEmbedOverview() {
       id={VIZ_ID}
       className="tableauPlaceholder"
       style={{
-        position: 'relative',
+        position: 'absolute',
+        inset: 0,
         width: '100%',
         height: '100%',
         minHeight: '200px',
+        padding: 0,
+        margin: 0,
         background: 'var(--viz-bg)',
         borderRadius: '25px',
         overflow: 'hidden',
