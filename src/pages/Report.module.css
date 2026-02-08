@@ -92,9 +92,9 @@
   gap: 15px;
 }
 
-/* Second row: left black box + Tableau (same height, Tableau to same right edge as grey box above) */
+/* Second row: Tableau (left, wider) + black box (right) */
 .vizRowDashboard {
-  grid-template-columns: 2fr 6fr;
+  grid-template-columns: 6fr 2fr;
   grid-auto-rows: 720px;
   align-items: stretch;
   width: 100%;
