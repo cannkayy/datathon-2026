@@ -92,12 +92,6 @@
   gap: 15px;
 }
 
-/* First row: black box (left) + Tableau (right, 1000px) */
-.vizRowFirst {
-  grid-template-columns: 1fr 1000px;
-  gap: 0 15px;
-}
-
 /* Second row: Tableau (left, 1000px) + black box (right, 1fr) */
 .vizRowDashboard {
   grid-template-columns: 1000px 1fr;
