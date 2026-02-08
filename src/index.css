@@ -94,6 +94,11 @@ a {
   overflow: hidden;
   isolation: isolate;
 }
+/* Black boxes: 15px inner padding */
+.viz-placeholder:not(:has(.tableauPlaceholder)) {
+  padding: 15px;
+  box-sizing: border-box;
+}
 /* Tableau embed: no box – viz replaces container, same height as row */
 .viz-placeholder:has(.tableauPlaceholder) {
   background: transparent;
