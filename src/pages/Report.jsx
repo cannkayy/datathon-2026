@@ -46,10 +46,6 @@ export default function Report() {
         </header>
         {SECTIONS.map((section, i) => (
         <section key={i} className={styles.section}>
-          <div className={styles.sectionTitleBox}>
-            <h2 className={styles.sectionTitle}>{section.title}</h2>
-            <p className={styles.sectionBody}>{section.body}</p>
-          </div>
           <div className={i === 1 ? `${styles.vizRow} ${styles.vizRowDashboard}` : styles.vizRow}>
             {i === 0 ? (
               <>
