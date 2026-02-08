@@ -92,19 +92,24 @@
   gap: 15px;
 }
 
-/* Second row: left black box + Tableau (same height, Tableau to same right edge as grey box above) */
+/* Second row: black box fills rest, 15px gap, Tableau flush right (within 15px page padding) */
 .vizRowDashboard {
-  grid-template-columns: 2fr 6fr;
+  grid-template-columns: 1fr 15px minmax(520px, 65%);
   grid-auto-rows: 720px;
   align-items: stretch;
   width: 100%;
   min-width: 0;
+  gap: 0;
+}
+.vizRowDashboard .viz-placeholder:first-child {
+  grid-column: 1; /* black box: takes 1fr */
+}
+.vizRowDashboard .viz-placeholder:last-child {
+  grid-column: 3; /* Tableau: right column, flush to content edge */
+  min-width: 0;
 }
 .vizRowDashboard .viz-placeholder {
   min-height: 720px;
-}
-.vizRowDashboard .viz-placeholder:last-child {
-  min-width: 0; /* let Tableau column fill to right edge */
 }
 
 .vizRow .viz-placeholder {
