@@ -59,8 +59,8 @@ export default function Report() {
               </>
             ) : i === 1 ? (
               <>
-                <VizPlaceholder />
                 <VizPlaceholder embed={<TableauEmbedOverview />} />
+                <VizPlaceholder />
               </>
             ) : (
               <>
