@@ -9,7 +9,7 @@ import BlackBoxWithLabel from '../components/BlackBoxWithLabel'
 import styles from './Report.module.css'
 
 const TEAM = [
-  { name: 'Ahn Do', linkedin: 'https://www.linkedin.com/in/anhdo24/' },
+  { name: 'Anh Do', linkedin: 'https://www.linkedin.com/in/anhdo24/' },
   { name: 'Christie Dong', linkedin: 'https://www.linkedin.com/in/xinyi-dong-734375243/' },
   { name: 'Stephanie Balderas', linkedin: 'https://www.linkedin.com/in/stephanie-balderas-vega/' },
   { name: 'Cannon Hurst', linkedin: 'https://www.linkedin.com/in/cannonhurst/' },
