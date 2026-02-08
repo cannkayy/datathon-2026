@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-const VIZ_ID = 'viz1770520575971'
+const VIZ_ID = 'viz1770522312797'
 const TABLEAU_SCRIPT = 'https://public.tableau.com/javascripts/api/viz_v1.js'
 
 export default function TableauEmbed() {
@@ -38,7 +38,7 @@ export default function TableauEmbed() {
         <a href="#">
           <img
             alt="The Unhealthy %: Tracking America's Most At-Risk States"
-            src="https://public.tableau.com/static/images/77/77SJR6Q4M/1_rss.png"
+            src="https://public.tableau.com/static/images/F4/F4NXCJ96H/1_rss.png"
             style={{ border: 'none' }}
           />
         </a>
@@ -46,9 +46,9 @@ export default function TableauEmbed() {
       <object className="tableauViz" style={{ display: 'none', width: '100%' }}>
         <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
         <param name="embed_code_version" value="3" />
-        <param name="path" value="shared/77SJR6Q4M" />
+        <param name="path" value="shared/F4NXCJ96H" />
         <param name="toolbar" value="yes" />
-        <param name="static_image" value="https://public.tableau.com/static/images/77/77SJR6Q4M/1.png" />
+        <param name="static_image" value="https://public.tableau.com/static/images/F4/F4NXCJ96H/1.png" />
         <param name="animate_transition" value="yes" />
         <param name="display_static_image" value="yes" />
         <param name="display_spinner" value="yes" />
