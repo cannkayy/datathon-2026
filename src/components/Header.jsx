@@ -32,7 +32,7 @@ export default function Header() {
             isActive ? `${styles.link} ${styles.linkActive}` : styles.link
           }
         >
-          <span className={styles.linkText}>Dashboard</span>
+          <span className={styles.linkText}>ML Model</span>
         </NavLink>
         <NavLink
           to="/about"
