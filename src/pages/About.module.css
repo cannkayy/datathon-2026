@@ -30,6 +30,14 @@
   margin-bottom: 1rem;
 }
 
+.cardPhoto {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+}
+
 .cardName {
   font-size: 1.125rem;
   font-weight: 700;
