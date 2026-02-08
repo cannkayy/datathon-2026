@@ -26,6 +26,9 @@
   padding: 30px;
   min-width: 0;
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Correlation Matrix - column 2, row 1 */
@@ -90,6 +93,10 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.storyCard .sectionHeader {
+  margin-top: 1.5rem;
 }
 
 .storyCard .sectionHeader:first-of-type {
