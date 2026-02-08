@@ -3,6 +3,7 @@ import MockMapViz from '../components/MockMapViz'
 import MockGaugeViz from '../components/MockGaugeViz'
 import TableauEmbed from '../components/TableauEmbed'
 import TableauEmbedOverview from '../components/TableauEmbedOverview'
+import TableauEmbedThirdRow from '../components/TableauEmbedThirdRow'
 import styles from './Report.module.css'
 
 const TEAM = [
@@ -46,7 +47,7 @@ export default function Report() {
         </header>
         {SECTIONS.map((section, i) => (
         <section key={i} className={styles.section}>
-          <div className={i === 1 ? `${styles.vizRow} ${styles.vizRowDashboard}` : styles.vizRow}>
+          <div className={i === 1 ? `${styles.vizRow} ${styles.vizRowDashboard}` : i === 2 ? `${styles.vizRow} ${styles.vizRowThird}` : styles.vizRow}>
             {i === 0 ? (
               <>
                 <VizPlaceholder embed={<MockMapViz />} />
@@ -62,7 +63,7 @@ export default function Report() {
               <>
                 <VizPlaceholder />
                 <VizPlaceholder />
-                <VizPlaceholder />
+                <VizPlaceholder embed={<TableauEmbedThirdRow />} />
               </>
             )}
           </div>

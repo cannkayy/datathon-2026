@@ -111,6 +111,12 @@
   min-width: 0;
 }
 
+/* Third row: two black boxes (left) + Tableau (right, 1000px) */
+.vizRowThird {
+  grid-template-columns: 1fr 1fr 1000px;
+  gap: 15px;
+}
+
 .vizRow .viz-placeholder {
   width: 100%;
   height: 100%;
