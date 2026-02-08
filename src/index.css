@@ -92,6 +92,7 @@ a {
   border-radius: 25px;
   min-height: 200px;
   overflow: hidden;
+  isolation: isolate;
 }
 .viz-placeholder > * {
   width: 100%;
@@ -106,10 +107,15 @@ a {
 .viz-placeholder object {
   display: block;
   border: none;
+  margin: 0;
+  padding: 0;
   width: 100% !important;
   height: 100% !important;
   min-width: 100%;
   min-height: 100%;
+  background: var(--viz-bg);
+  border-radius: inherit;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {

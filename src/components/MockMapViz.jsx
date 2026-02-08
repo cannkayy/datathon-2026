@@ -7,7 +7,8 @@ export default function MockMapViz() {
         <span className="mock-viz__title-icon" />
         MY EXPERIENCE
       </div>
-      <svg viewBox="0 0 400 220" style={{ width: '100%', height: 'calc(100% - 2rem)', display: 'block' }}>
+      <div className="mock-viz__map-wrap">
+        <svg viewBox="0 0 400 220" preserveAspectRatio="xMidYMid slice" style={{ width: '100%', height: '100%', display: 'block' }}>
         <defs>
           <pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse">
             <circle cx="4" cy="4" r="1.2" fill="rgba(255,255,255,0.15)" />
@@ -38,6 +39,7 @@ export default function MockMapViz() {
           <text x="275" y="137" fontSize="5.5" fill="#fff">31.2989° N, 120.5853° E</text>
         </g>
       </svg>
+      </div>
     </div>
   )
 }
