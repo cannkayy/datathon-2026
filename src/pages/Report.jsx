@@ -55,13 +55,9 @@ export default function Report() {
                 <VizPlaceholder embed={<TableauEmbed />} />
               </>
             ) : i === 1 ? (
-              <>
-                <VizPlaceholder embed={<TableauEmbedOverview />} />
-                <VizPlaceholder />
-              </>
+              <VizPlaceholder embed={<TableauEmbedOverview />} />
             ) : (
               <>
-                <VizPlaceholder />
                 <VizPlaceholder />
                 <VizPlaceholder embed={<TableauEmbedThirdRow />} />
               </>
