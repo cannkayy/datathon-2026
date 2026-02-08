@@ -59,7 +59,7 @@ export default function Report() {
               </>
             ) : i === 1 ? (
               <>
-                <VizPlaceholder embed={<MockMapViz />} />
+                <VizPlaceholder />
                 <VizPlaceholder embed={<TableauEmbedOverview />} />
               </>
             ) : (

@@ -116,6 +116,9 @@ a {
   background: var(--viz-bg);
   border-radius: inherit;
   overflow: hidden;
+  /* Slightly scale to hide white border from Tableau’s internal padding */
+  transform: scale(1.05);
+  transform-origin: center center;
 }
 
 @media (max-width: 768px) {
