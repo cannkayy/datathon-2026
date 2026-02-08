@@ -8,7 +8,7 @@
   align-items: center;
   gap: 1.25rem;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .title {
@@ -155,7 +155,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.75rem;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   .title {
@@ -193,7 +193,7 @@
   }
 
   .reportHeader {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   .namePills {
