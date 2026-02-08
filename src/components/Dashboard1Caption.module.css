@@ -2,7 +2,7 @@
   padding: 15px;
   color: #e5e5e5;
   font-size: 20px;
-  line-height: 1.65;
+  line-height: 1.6;
   font-weight: 400;
   height: 100%;
   box-sizing: border-box;
@@ -12,17 +12,27 @@
 }
 
 .caption p {
-  margin: 0 0 1rem;
+  margin: 0 0 18px;
 }
 
 .caption p:last-child {
   margin-bottom: 0;
 }
 
+.separator {
+  width: 60px;
+  height: 2px;
+  margin: 24px 0;
+  background: linear-gradient(to right, #666, transparent);
+  flex-shrink: 0;
+}
+
 .heading {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 700;
-  margin: 1.25rem 0 0.5rem;
+  margin: 28px 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
   color: #fff;
 }
 

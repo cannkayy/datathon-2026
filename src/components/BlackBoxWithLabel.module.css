@@ -18,12 +18,11 @@
   font-size: 0.8125rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  color: #b0b0b0;
   text-transform: uppercase;
-}
-
-.labelRow svg {
-  color: #fff;
+  background: linear-gradient(90deg, #FFE414 0%, #45FCB3 33%, #EA45FC 66%, #FC7345 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .content {
