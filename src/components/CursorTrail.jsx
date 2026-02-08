@@ -143,10 +143,14 @@ export default function CursorTrail() {
       }}
     >
       <defs>
-        <filter id="cursor-glow" x="-20%" y="-20%" width="140%" height="140%">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur" />
+        <filter id="cursor-glow" x="-30%" y="-30%" width="160%" height="160%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />
+          <feFlood floodColor="white" floodOpacity="0.85" result="white" />
+          <feComposite in="blur" in2="white" operator="in" result="whiteGlow" />
+          <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blurLine" />
           <feMerge>
-            <feMergeNode in="blur" />
+            <feMergeNode in="whiteGlow" />
+            <feMergeNode in="blurLine" />
             <feMergeNode in="SourceGraphic" />
           </feMerge>
         </filter>
@@ -168,7 +172,7 @@ export default function CursorTrail() {
           d={pathD}
           fill="none"
           stroke={`url(#${gradId})`}
-          strokeWidth={0.5}
+          strokeWidth={0.8}
           strokeLinecap="round"
           strokeLinejoin="round"
         />
