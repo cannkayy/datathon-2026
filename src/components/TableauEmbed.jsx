@@ -36,8 +36,7 @@ export default function TableauEmbed() {
         width: '100%',
         height: '100%',
         minHeight: '200px',
-        background: 'var(--viz-bg)',
-        borderRadius: '25px',
+        background: 'transparent',
         overflow: 'hidden',
       }}
     >
