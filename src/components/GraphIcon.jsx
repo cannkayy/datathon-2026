@@ -6,7 +6,7 @@ export default function GraphIcon({ className = '', size = 24 }) {
       height={size}
       viewBox="0 0 24 24"
       fill="none"
-      stroke="url(#graph-icon-gradient)"
+      stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
