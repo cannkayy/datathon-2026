@@ -2,6 +2,7 @@ import VizPlaceholder from '../components/VizPlaceholder'
 import TableauEmbed from '../components/TableauEmbed'
 import TableauEmbedOverview from '../components/TableauEmbedOverview'
 import TableauEmbedThirdRow from '../components/TableauEmbedThirdRow'
+import Dashboard2Caption from '../components/Dashboard2Caption'
 import styles from './Report.module.css'
 
 const TEAM = [
@@ -54,7 +55,7 @@ export default function Report() {
             ) : i === 1 ? (
               <>
                 <VizPlaceholder embed={<TableauEmbedOverview />} />
-                <VizPlaceholder />
+                <VizPlaceholder embed={<Dashboard2Caption />} />
               </>
             ) : (
               <>
