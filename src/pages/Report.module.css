@@ -91,10 +91,14 @@
   gap: 15px;
 }
 
-/* Second row: Map (1 col) + Tableau Overview (2 cols), taller so embed needs less scroll */
+/* Second row: left black box + Tableau (same height) */
 .vizRowDashboard {
   grid-template-columns: 2fr 6fr;
   grid-auto-rows: 720px;
+  align-items: stretch;
+}
+.vizRowDashboard .viz-placeholder {
+  min-height: 720px;
 }
 
 .vizRow .viz-placeholder {

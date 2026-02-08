@@ -94,6 +94,13 @@ a {
   overflow: hidden;
   isolation: isolate;
 }
+/* Tableau embed: no box – viz replaces container, same height as row */
+.viz-placeholder:has(.tableauPlaceholder) {
+  background: transparent;
+  border-radius: 0;
+  min-height: 0;
+  height: 100%;
+}
 .viz-placeholder > * {
   width: 100%;
   height: 100%;
@@ -105,6 +112,7 @@ a {
 }
 .viz-placeholder:has(.tableauPlaceholder) > * {
   background: transparent;
+  min-height: 0;
 }
 .viz-placeholder iframe,
 .viz-placeholder object {
