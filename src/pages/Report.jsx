@@ -37,6 +37,7 @@ export default function Report() {
         <header className={styles.reportHeader}>
           <h1 className={styles.title}>Datathon 2026</h1>
           <div className={styles.namePills}>
+            <span className={styles.pillTag}>Livable Planet</span>
             {TEAM.map(({ name, linkedin }) => (
               <a key={name} href={linkedin} target="_blank" rel="noopener noreferrer" className={styles.pill}>
                 {name}

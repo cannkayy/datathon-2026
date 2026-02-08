@@ -53,6 +53,18 @@
   border-color: #ccc;
 }
 
+.pillTag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #fff;
+  background: var(--viz-bg);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
 .section {
   margin-bottom: 15px;
   width: 100%;
