@@ -92,19 +92,23 @@
   gap: 15px;
 }
 
-/* Second row: Tableau (left, wider) + black box (right) */
+/* Second row: Tableau (left, wider) + black box (right), minimal gap */
 .vizRowDashboard {
   grid-template-columns: 6fr 2fr;
   grid-auto-rows: 720px;
   align-items: stretch;
   width: 100%;
   min-width: 0;
+  gap: 0 8px; /* small horizontal gap only; 15px looked like a large white strip */
 }
 .vizRowDashboard .viz-placeholder {
   min-height: 720px;
 }
+.vizRowDashboard .viz-placeholder:first-child {
+  min-width: 0; /* Tableau column can shrink; viz may not fill iframe width */
+}
 .vizRowDashboard .viz-placeholder:last-child {
-  min-width: 0; /* let Tableau column fill to right edge */
+  min-width: 0;
 }
 
 .vizRow .viz-placeholder {
