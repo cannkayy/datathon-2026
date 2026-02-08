@@ -21,17 +21,18 @@
 .storyCard {
   grid-column: 1;
   grid-row: 1 / 3;
-  background: #151517;
+  background: #161616;
   border-radius: 20px;
   padding: 30px;
   min-width: 0;
+  font-size: 20px;
 }
 
 /* Correlation Matrix - column 2, row 1 */
 .correlationCard {
   grid-column: 2;
   grid-row: 1;
-  background: #151517;
+  background: #161616;
   border-radius: 20px;
   padding: 20px;
   min-width: 0;
@@ -41,7 +42,7 @@
 .performanceCard {
   grid-column: 2;
   grid-row: 2;
-  background: #151517;
+  background: #161616;
   border-radius: 20px;
   padding: 30px;
   min-width: 0;
@@ -51,7 +52,7 @@
 .plotsCard {
   grid-column: 1 / -1;
   grid-row: 3;
-  background: #151517;
+  background: #161616;
   border-radius: 20px;
   padding: 20px;
   min-width: 0;
@@ -61,7 +62,7 @@
 .impactCard {
   grid-column: 1 / -1;
   grid-row: 4;
-  background: #151517;
+  background: #161616;
   border-radius: 20px;
   padding: 30px;
   min-width: 0;
@@ -93,7 +94,13 @@
 }
 
 .storyCard p,
-.storyCard ul,
+.storyCard ul {
+  line-height: 1.65;
+  color: #ccc;
+  font-size: 1em;
+  margin-bottom: 14px;
+}
+
 .impactCard p,
 .impactCard ul {
   line-height: 1.65;
